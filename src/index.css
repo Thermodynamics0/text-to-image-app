@@ -1,0 +1,4 @@
+/* Global base reset — App.css handles all design tokens */
+*, *::before, *::after { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body { margin: 0; }
