@@ -1,16 +1,74 @@
-# React + Vite
+# 🖼️ Text → Image AI App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React web app that turns text prompts into AI-generated images using **Stable Diffusion XL** via the Hugging Face Inference API. Type any idea, pick a quality preset, and get a stunning visual in seconds.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🎨 **Stable Diffusion XL** image generation via Hugging Face + nscale provider
+- ⚡ **3 Quality Presets** — Fast (~15s), Balanced (~30s), High (~60s)
+- 💡 **Example Prompts** — one-click inspiration to get started
+- 📥 **Download** generated images directly to your device
+- 🔄 **Regenerate** with the same prompt in one click
+- 🧮 **Character counter** with 500 char limit on prompts
+- ⌨️ **Keyboard shortcut** — `Cmd+Enter` to generate
+- 💅 Smooth loading states, shimmer effects, and error handling
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Technology | Purpose |
+|------------|---------|
+| React 18 | Frontend UI |
+| Vite | Build tool & dev server |
+| Hugging Face Inference JS | AI image generation API |
+| Stable Diffusion XL | Image generation model |
+| CSS | Custom styling & animations |
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+- Node.js v18+
+- A free [Hugging Face](https://huggingface.co) account + API token
+
+### Installation
+
+```bash
+git clone https://github.com/Thermodynamics0/text-to-image-app.git
+cd text-to-image-app
+npm install
+```
+
+### Environment Setup
+
+Create a `.env` file in the root directory:
+
+```env
+VITE_HF_TOKEN=your_huggingface_token_here
+```
+
+Get your free token at → [huggingface.co/settings/tokens](https://huggingface.co/settings/tokens)
+
+> ⚠️ Never commit your `.env` file — it's already in `.gitignore`.
+
+### Run the App
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## 🎯 How It Works
+
+1. Enter a text description of the image you want
+2. Choose a quality preset (Fast / Balanced / High)
+3. Hit **Generate Image** or press `Cmd+Enter`
+4. The app calls Hugging Face's Inference API with Stable Diffusion XL
+5. Your image appears — download or regenerate instantly
+
+## 🌐 Live Demo
+
+🔗 [View Live App](#) *(coming soon)*
+
+---
+
+Made with ❤️ by [Thermodynamics0](https://github.com/Thermodynamics0)
