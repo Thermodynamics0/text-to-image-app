@@ -67,7 +67,7 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ## 🌐 Live Demo
 
-🔗 [View Live App](#) *(coming soon)*
+🔗 [View Live App](https://text-to-image-app-rouge.vercel.app/)
 
 ---
 
